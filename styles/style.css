@@ -135,6 +135,7 @@ body {
   position: relative;
   border: none;
   border: 1px solid var(--primary-text);
+  cursor: pointer;
 }
 .circle {
   border: none;
