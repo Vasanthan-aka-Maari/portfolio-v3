@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vasanthan</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Home section -->
+    <section id="home">
+      <!-- nav bar -->
+      <nav id="nav">
+        <div id="menu-bars">
+          <div onclick="onClickMenu()" id="menu">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+          </div>
+        </div>
+        <ul class="links">
+          <li><a class="link" href="#home">Home</a></li>
+          <li><a class="link" href="#about">About</a></li>
+          <li><a class="link" href="#projects">Projects</a></li>
+          <li>
+            <a class="link" target="_blank" href="./Resume.pdf">Resume</a>
+          </li>
+        </ul>
+        <div class="theme-toggler">
+          <input type="checkbox" id="checkbox" class="checkbox" />
+          <label class="label" for="checkbox">
+            <i class="fas fa-moon moon"></i>
+            <i class="fas fa-sun sun"></i>
+            <div class="circle"></div
+          ></label>
+        </div>
+      </nav>
+
+      <!-- hero container -->
+      <div class="hero-container">
+        <h2 class="sub-heading">Welcome</h2>
+        <h1 class="main-heading">I am <span>Vasanthan</span></h1>
+        <h2 class="sub-heading">Front-end Developer</h2>
+      </div>
+
+      <!-- bottom container -->
+      <div class="home-bottom">
+        <ul class="links">
+          <li>
+            <a class="link" href="https://github.com/Vasanthan-aka-Maari"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a class="link" href="https://www.instagram.com/vasanthan_vs/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="link"
+              href="https://www.linkedin.com/in/vasanthan-prabhagaran-298123196/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li>
+            <a class="link" href="mailto: vasanth2754@gmail.com"
+              ><i class="far fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about">
+      <div class="about-container">
+        <h1 class="title">About Me</h1>
+        <p class="about-text">
+          Hello, I am Front-end Web Developer based in India. I learn to code on
+          my own, always a side hustler. I love to develope web application and
+          learning something new. Wanted to be a Digital Nomad and a Content
+          Creator.
+        </p>
+      </div>
+      <div class="skill-container">
+        <h1 class="title">My Skills</h1>
+        <div class="skills">
+          <div class="col">
+            <ul>
+              <p class="skill">Reactjs</p>
+              <p class="skill">HTML</p>
+              <p class="skill">Firebase</p>
+              <p class="skill">Linux</p>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <p class="skill">JavaScript</p>
+              <p class="skill">CSS</p>
+              <p class="skill">Python</p>
+              <p class="skill">GitHub</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+      <div class="row">
+        <div class="project">
+          <img
+            src="./images/netflixlogo.jpg"
+            alt="netflix clone"
+            class="project-img"
+          />
+          <div class="project-bottom">
+            <p class="project-info">
+              <span>Netflix Clone</span> is a very fascinating project. It uses
+              the movie api to display all kind of movies and can show trailers.
+              <br />
+              <strong>Reactjs, API</strong>
+            </p>
+            <div class="button-container">
+              <a
+                target="_blank"
+                href="https://vasanthan-aka-maari.github.io/Netflx-Clone/"
+                >Website</a
+              >
+              <a
+                target="_blank"
+                href="https://github.com/Vasanthan-aka-Maari/Netflx-Clone"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <img
+            src="./images/facebook-clone.jpg"
+            alt="facebook-clone"
+            class="project-img"
+          />
+          <div class="project-bottom">
+            <p class="project-info">
+              <span>Facebook Clone</span> is similar like Facebook. It uses
+              Firebase for google authentication and as Database.
+              <br />
+              <strong>Reactjs, Firebase, Google authentication</strong>
+            </p>
+            <div class="button-container">
+              <a target="_blank" href="https://fb-clone-a777a.web.app/"
+                >Website</a
+              >
+              <a
+                target="_blank"
+                href="https://github.com/Vasanthan-aka-Maari/facebook-clone"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <img
+            src="./images/instagram-clone.jpg"
+            alt="instagram-clone"
+            class="project-img"
+          />
+          <div class="project-bottom">
+            <p class="project-info">
+              <span>Instagram Clone</span> awesome to use. You can post photos
+              and also comment on it and see the result real-time.
+              <br />
+              <strong>Reactjs, Firebase</strong>
+            </p>
+            <div class="button-container">
+              <a target="_blank" href="https://my-own-instagram-ceb49.web.app/"
+                >Website</a
+              >
+              <a
+                target="_blank"
+                href="https://github.com/Vasanthan-aka-Maari/Instagram-clone"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="project">
+          <img
+            src="./images/landingpage.jpg"
+            alt="landing page"
+            class="project-img"
+          />
+          <div class="project-bottom">
+            <p class="project-info">
+              <span>Landing Page</span> a premium looking product landing page
+              built in React and Styled Components. You can easily modify
+              components.
+              <br />
+              <strong>Reactjs, Styled Components</strong>
+            </p>
+            <div class="button-container">
+              <a
+                target="_blank"
+                href="https://vasanthan-aka-maari.github.io/react-product-landing-page/#/"
+                >Website</a
+              >
+              <a
+                target="_blank"
+                href="https://github.com/Vasanthan-aka-Maari/react-product-landing-page"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <img
+            src="./images/amazon.jpg"
+            alt="amazon-clone"
+            class="project-img"
+          />
+          <div class="project-bottom">
+            <p class="project-info">
+              <span>Amazon Clone</span> a e-commerce application with real-time
+              response. Has features to add or remove products from basket.
+              <br />
+              <strong>Reactjs, React-Context API</strong>
+            </p>
+            <div class="button-container">
+              <a target="_blank" href="https://clone-782c9.web.app/#/"
+                >Website</a
+              >
+              <a
+                target="_blank"
+                href="https://github.com/Vasanthan-aka-Maari/amazon-clone"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <img
+            src="./images/covid-tracker.jpg"
+            alt="covid-tracker"
+            class="project-img"
+          />
+          <div class="project-bottom">
+            <p class="project-info">
+              <span>Covid-19 Tracker</span> displays dynamic data about Covid-19
+              all over the globe from an API. Also uses chartjs to show the
+              graph.
+              <br />
+              <strong>Reactjs, API, Chartjs</strong>
+            </p>
+            <div class="button-container">
+              <a target="_blank" href="https://corona-tracker-2f5a7.web.app/"
+                >Website</a
+              >
+              <a
+                target="_blank"
+                href="https://github.com/Vasanthan-aka-Maari/covid-tracker"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <section id="footer">
+      <h1>Hope you <i style="color: red" class="fas fa-heart"></i> my work</h1>
+      <h2>
+        Thank You &nbsp;
+        <img
+          src="./animations/391906110_WAVING_HAND_400px.gif"
+          alt=""
+          width="50px"
+        />
+      </h2>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
