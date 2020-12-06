@@ -11,9 +11,11 @@ html {
   --primary-text: #f02d4d;
   --secondary-text: #08708a;
   --btn-color: #5a5af0;
+  --button-hover: #4242f5;
   --border-color: #dfdfdf;
   --project-bg: #fff;
   --shadow-color: rgba(0, 0, 0, 0.75);
+  --hero-color: #ff7e5f;
 }
 html[data-theme="dark"] {
   --primary-bg: #351c4d;
@@ -22,6 +24,7 @@ html[data-theme="dark"] {
   --border-color: #cfa07c98;
   --project-bg: #8a2561;
   --shadow-color: #8d8ff1c0;
+  --hero-color: #f02d4d;
 }
 /* Toggle Theme */
 ul {
@@ -167,12 +170,13 @@ body {
 .main-heading {
   font-size: 4.5rem;
   margin-top: 1rem;
-  color: var(--primary-text);
+  color: var(--hero-color);
   letter-spacing: 2px;
 }
 .main-heading span {
   font-family: "Sansita Swashed", cursive;
   letter-spacing: 5px;
+  color: var(--primary-text);
 }
 .sub-heading {
   font-size: 3rem;
@@ -292,6 +296,10 @@ html.transition *::after {
   background-color: var(--btn-color);
   border-radius: 5px;
   color: #fff;
+  transition: all 0.2s;
+}
+.button-container a:hover {
+  background-color: var(--button-hover);
 }
 /********* Project *********/
 
@@ -301,11 +309,27 @@ html.transition *::after {
   padding: 1rem 0;
   text-align: center;
   color: var(--secondary-text);
+  position: relative;
 }
 #footer h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#footer a {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--primary-text);
+  font-weight: 700;
+  transition: all 0.2s;
+}
+.fa-caret-right {
+  transition: all 0.2s;
+}
+#footer a:hover > .fa-caret-right {
+  transform: translateX(5px);
 }
 /********* Footer *********/
 
@@ -331,8 +355,14 @@ html.transition *::after {
     padding-bottom: 2rem;
     width: 95%;
   }
+  .about-text {
+    font-size: 1.2rem !important;
+  }
   .title {
-    padding-top: 1.5rem;
+    font-size: 2rem;
+  }
+  .skill {
+    font-size: 1.2rem;
   }
 }
 
@@ -360,5 +390,13 @@ html.transition *::after {
   }
   .show#nav > .links a {
     color: var(--primary-bg);
+  }
+  #footer a {
+    position: relative;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: block;
+    padding-top: 20px;
   }
 }
