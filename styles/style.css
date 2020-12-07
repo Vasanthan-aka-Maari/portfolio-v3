@@ -203,7 +203,7 @@ html.transition *::after {
 
 /********* About *********/
 #about {
-  height: 100vh;
+  min-height: 100vh;
   color: var(--secondary-text);
 }
 .about-container {
@@ -363,6 +363,9 @@ html.transition *::after {
   }
   .skill {
     font-size: 1.2rem;
+  }
+  .skill-container {
+    margin-bottom: 0;
   }
 }
 
