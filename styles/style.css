@@ -261,11 +261,17 @@ html.transition *::after {
   -webkit-box-shadow: 0px 4px 17px -1px var(--shadow-color);
   -moz-box-shadow: 0px 4px 17px -1px var(--shadow-color);
   box-shadow: 0px 4px 17px -1px var(--shadow-color);
+  overflow: hidden;
+}
+.project:hover > .project-img {
+  transform: scale(1.03);
+  border-radius: 10px;
 }
 .project-img {
   object-fit: contain;
   width: 100%;
   height: 200px;
+  transition: all 0.2s;
 }
 .project-info {
   margin-left: 1rem;
