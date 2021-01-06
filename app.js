@@ -33,3 +33,9 @@ checkbox.addEventListener("change", () => {
     document.documentElement.setAttribute("data-theme", "light");
   }
 });
+
+// making the theme checkbox checked on refresh
+const checkbox = document.getElementsByTagName("INPUT");
+if (checkbox.type == "checkbox") {
+  checkbox.checked = false;
+}
